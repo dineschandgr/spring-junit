@@ -7,11 +7,11 @@ import org.springframework.stereotype.Service;
 public class Calculator {
 
     public int add(int a, int b){
-        int c = a - b;
+        int c = a + b;
         return c;
     }
 
-    public int add1(int a, int b){
+    public int sub(int a, int b){
         int c = a - b;
         return c;
     }

@@ -11,6 +11,7 @@ public class CheckoutService {
         double itemAmount = 99.99;
         double discount = 9.99;
         double finalTotal = calculateCheckoutInfo(itemAmount, discount);
+        CartDTO cartDTO1 = CartDTO.builder().id(2).amount(100).totalAmount(100).build();
         CartDTO cartDTO = CartDTO.builder().id(1).amount(itemAmount).discount(discount).totalAmount(finalTotal).build();
         return cartDTO;
     }

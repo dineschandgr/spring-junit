@@ -18,8 +18,9 @@ class CalculatorTest {
     @Autowired
     Calculator calculator;
 
+
     @TestConfiguration
-    static class ClientServiceTestContextConfiguration {
+    static class CalculatorTestConfig {
         @Bean
         public Calculator calculator() {
             return new Calculator();
@@ -27,9 +28,16 @@ class CalculatorTest {
     }
 
     @Test
-    void checkout() {
+    void add() {
 
         int sum = calculator.add(20,10);
         Assertions.assertEquals(30,sum);
+    }
+
+
+    @Test
+    void sub() {
+        int diff = calculator.sub(20,10);
+        Assertions.assertEquals(10,diff);
     }
 }

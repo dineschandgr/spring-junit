@@ -27,8 +27,8 @@ class CheckoutServiceTest {
 
     @Test
     public void getCheckoutInfo(){
-        double finalAmt = checkoutService.calculateCheckoutInfo(11, 1);
-        Assertions.assertEquals(11.4,finalAmt);
+        double finalAmt = checkoutService.calculateCheckoutInfo(99.99, 9.99);
+        Assertions.assertEquals(102.6,finalAmt);
 
 
     }
